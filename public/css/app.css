@@ -1,0 +1,188 @@
+/* ============== velcome ============= */
+/* ==================================== */
+.btns-reg-log{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .logo{
+		text-align: left;
+        color: green;
+    }
+    .welcome-greeting{
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .greeting-text{
+        text-align: center;
+        font-family: cursive;
+        line-height: 50px;
+    }
+    .back{
+        background-image: url("../welcomeBackground/back1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+/* =================== register ===================== */
+/* ================================================== */
+.regBack{
+	min-height: 100vh !important;
+	background-image: url("../welcomeBackground//back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+.register-greeting{
+	text-align: center;
+}
+.register-form{
+	border-radius: 5px;
+	border: 1px black solid;
+	padding: 35px 40px 0px 40px;
+	margin: 10px 0 0 0 !important;
+	text-align: center;
+}
+.register-form > input{
+	margin: 5px 0px;
+}
+.register-form > select{
+	margin: 5px 0px 15px 0px;
+}
+.register-form > p{
+	margin: 15px 0px;	
+	font-size: 14px; 
+	text-align: right;
+}
+label{
+	padding: 0px !important;
+	margin: 0px !important;
+	color: red;
+}
+
+/* ===================== login ===================== */
+/* ================================================= */
+.logBack{
+	min-height: 100vh !important;
+	background-image: url("../welcomeBackground//back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+.login-greeting{
+        text-align: center;
+    }
+    .login-form{
+        border-radius: 5px;
+        border: 1px black solid;
+        padding: 35px 40px 0px 40px;
+        margin: 100px 0 0 0 !important;
+    }
+    .login-form > input{
+        margin: 15px 0px;
+    }
+    .login-form > p{
+        margin: 15px 0px;	
+        font-size: 14px; 
+        text-align: right;
+    }
+
+/* ============== Manager and Programmer dashboards ============ */
+/* ============================================================= */
+.greeting-programmer{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.greeting-manaer{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.taskHeading{
+	text-align: center;
+}
+.out-btn-prog{
+	text-align: right;
+}
+.create-btn{
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.create-btn > button{
+	width: 20%;
+}
+.columns{
+	padding: 5px;
+	border: 1px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 20px 30px 20px; 
+	border: 1px black solid;
+	border-radius: 5px;	
+}
+.text{
+	text-align: center;
+}
+.inputs{
+	margin: 20px 0px 0px 0px;
+}
+.btns{
+	display: flex;
+	justify-content: center;
+}
+
+/* ======== task details ======== */
+/* ============================== */
+h3{
+	text-align: center;
+}
+.detail-names{
+	border-right: 1px black solid;
+	color: red;
+}
+.detail-descriptions{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ============ answer ============ */
+/* ================================ */
+.answer{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* ====== editor ======== */
+/* ====================== */
+.editor-containers{
+	padding: 10px;
+	height: 80vh;
+	border: 1px black solid;
+}
+.runCodeBtn{
+	display: flex;
+	justify-content: flex-end;
+}
+.answerHead{
+	text-align: center;
+	color: green;
+}
+.editorHeading{
+	text-align: center;
+	color: green;	
+}
+.code-box{
+	height: 50vh;
+}
