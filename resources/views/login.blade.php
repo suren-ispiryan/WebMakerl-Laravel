@@ -37,7 +37,7 @@
                             
                             @csrf
                             
-                            <h4 class="login-greeting mb-5">Wellcome to login page</h4>
+                            <h4 class="login-greeting mb-5">Welcome to login page</h4>
                             
                             <input type="email" 
                                 name="email" 
@@ -50,13 +50,17 @@
                                 placeholder="Please write your password"
                             >		
                             
+                            @isset($errLogin)
+                                <p class="text-danger logMsg">{{ $errLogin }}</p>
+                            @endisset
+
                             <button type="submit" 
                                     class="form-control btn btn-primary">
                                 Sign in
                             </button>
 
                             <p>
-                                not registered yet?
+                                Not registered yet?
                                 <a href="register">register here</a>
                             </p>
                         </form>	

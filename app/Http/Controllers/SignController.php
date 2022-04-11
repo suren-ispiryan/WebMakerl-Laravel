@@ -54,8 +54,11 @@ class SignController extends Controller
                 $tasklist = Task::where('assignedTo', Auth::User()->email)->where('status', "assigned")->get();
                 return view('programmerDashboard')->with('taskList', $tasklist);    
             }
-        }   
-        return abort(403);
+        }else{
+            $errLogin = 'Username or password is incorrect';
+            return view('login')->with('errLogin', $errLogin);
+        }  
+        
     }
 
     public function logOut(){

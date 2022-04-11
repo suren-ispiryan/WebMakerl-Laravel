@@ -37,7 +37,7 @@
 
                             @csrf
 
-                            <h4 class="register-greeting mb-5">Wellcome to register page</h4>
+                            <h4 class="register-greeting mb-5">Welcome to register page</h4>
                             
                             <label for="name" class="mt-1 alert alert-danger">
                                 {{ $errors->first('name') }}
@@ -94,7 +94,7 @@
                             </button>
 
                             <p>
-                                already registered?
+                                Already registered?
                                 <a href="login">login here</a>
                             </p>
                         </form>	

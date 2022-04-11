@@ -88,7 +88,7 @@
                     </div>
     
                     <div class="col-md-2 columns">
-                        <h4>Modefy</h4>
+                        <h4>Modify</h4>
                     </div>
                 </div>
     

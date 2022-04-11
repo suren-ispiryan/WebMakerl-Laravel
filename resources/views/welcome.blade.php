@@ -23,6 +23,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
+        {{-- Fonts CDN --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- nav -->
@@ -55,9 +59,9 @@
             <!-- <div class="container"> -->
                 <div class="row">
                     <div class="col-md-7 welcome-greeting">
-                        <h4 class="greeting-text">
+                        <h5 class="greeting-text">
                             Welcome to WebMaker, <br> we will help you to increase your knowledge in programming. <br> Our managers will help you to develop yourself as a programmer. <br> Just keep working hard and never give up. <br> What are you waiting for?
-                        </h4>
+                        </h5>
                     </div>	
 
                     <div class="col-md-5"></div>
@@ -87,19 +91,19 @@
                                 <div class="col-md-12 classesweb">
                                     <a href="{{ url('https://www.w3schools.com/js/default.asp') }}" target="_blank">
                                         <button class="btn btn-success">
-                                            Js
+                                            JS
                                         </button>
                                     </a>
                                     
                                     <a href="{{ url('https://www.w3schools.com/php/default.asp') }}" target="_blank">
                                         <button class="btn btn-success">
-                                            Php	
+                                            PHP	
                                         </button>
                                     </a>
 
                                     <a href="{{ url('https://www.w3schools.com/sql/default.asp') }}" target="_blank">
                                         <button class="btn btn-success">
-                                            Sql	
+                                            SQL	
                                         </button>
                                     </a>
 
