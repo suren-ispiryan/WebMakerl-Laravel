@@ -35,12 +35,12 @@
 
                     <div class="col-md-2 btns-reg-log">
                         <a href="{{ url('register') }}">
-                            <button class="btn btn-primary">
+                            <button class="btn btn-success">
                                 Register		
                             </button>
                         </a>
                         <a href="{{ url('login') }}">
-                            <button class="btn btn-primary">
+                            <button class="btn btn-success">
                                 Login		
                             </button>
                         </a>
@@ -63,6 +63,90 @@
                     <div class="col-md-5"></div>
                 </div>
             <!-- </div>		 -->
+        </section>
+
+        <section class="container">
+            <div class="row">
+               <div class="col-md-12">
+
+                    <div class="row mt-4 mb-4">
+                        <div class="col-md-6 classesweb">
+        {{-- pic --}}
+                            <img src="{{URL::asset('/welcomeLearningPictures/learning.jpg')}}" 
+                                 alt="learnWeb"
+                                 class="img-fluid"
+                            >
+                        </div>
+        {{-- Links --}}
+                        <div class="col-md-6 classesweb">
+
+                            <h4 class="mb-5 mt-4 ">Gain or improve your knowledge here</h4>
+
+                            <h6>Languages for Web programming</h6>
+                            <div class="row mt-3">
+                                <div class="col-md-12 classesweb">
+                                    <a href="{{ url('https://www.w3schools.com/js/default.asp') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            Js
+                                        </button>
+                                    </a>
+                                    
+                                    <a href="{{ url('https://www.w3schools.com/php/default.asp') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            Php	
+                                        </button>
+                                    </a>
+
+                                    <a href="{{ url('https://www.w3schools.com/sql/default.asp') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            Sql	
+                                        </button>
+                                    </a>
+
+                                    <a href="{{ url('https://laravel.com/docs/9.x') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                        Laravel	
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-5">Languages for Gaming/Ai/Microcontrollers</h6>
+                            <div class="row mt-3">
+                                <div class="col-md-12 classesweb">
+                                    <a href="{{ url('https://www.w3schools.com/java/default.asp') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            Java
+                                        </button>
+                                    </a>
+
+                                    <a href="{{ url('https://www.w3schools.com/python/default.asp') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            Python	
+                                        </button>
+                                    </a>
+                                    
+                                    <a href="{{ url('https://docs.microsoft.com/en-us/cpp/cpp/?view=msvc-170') }}" target="_blank">
+                                        <button class="btn btn-success">
+                                            C/C++
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <hr class="lineCopyright">
+                    <p class="copyright">© 2022 WebMaker, LLC, a programming teaching company.</p>    
+                </div>                
+            </div>
         </section>
     </body>
 </html>

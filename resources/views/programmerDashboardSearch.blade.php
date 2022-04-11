@@ -27,20 +27,23 @@
     <body>
         <section class="container-fluid">
             <div class="container">
-    
-                <div class="row m-4">
-                    <div class="col-md-10">			
-                        <h2 class="taskHeading">Task list</h2>
+                <div class="row mt-3">
+                    <div class="col-md-4 greeting-programmer">			
+                        <h4 class="taskHeading">Welcome back {{ Auth::user()->name }}</h4>
                     </div>
-                    <form action="/logout" method="GET">
-                        <button class="btn btn-danger">log out</button>
-                    </form>
+                    
+                    <div class="col-md-6"></div>
+                    
+                    <div class="col-md-2 out-btn-prog">
+                        <form action="/logout" method="GET">
+                            <button class="btn btn-danger">log out</button>
+                        </form>
+                    </div>
                 </div>
     
     
-    
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row mt-5">
+                    <div class="col-md-4">
                         <form class="search" 
                               action="/programmerSearchedDashboard" 
                               method="POST">
@@ -48,16 +51,22 @@
                             @csrf
 
                             <div class="row">
-                                <div class="col-md-11">						
+                                <div class="col-md-10">						
                                     <input class="form-control" type="text" name="search" >
                                 </div>
                             
-                                <div class="col-md-1">
-                                    <button class="btn btn-success">Search</button>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-success">Search</button>
                                 </div>
                             </div>
                         </form>
-                    </div>	
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h2 class="taskHeading">Task list</h2>
+                    </div>
+
+                    <div class="col-md-2"></div>    
                 </div>
     
     <!-- Tasks heading -->

@@ -1,4 +1,4 @@
-/* ============== velcome ============= */
+/* ============== welcome ============= */
 /* ==================================== */
 .btns-reg-log{
         display: flex;
@@ -25,7 +25,15 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+    .classesweb{
+		text-align: center;
+	}
+	.copyright{
+		text-align: center;
+	}
+	.lineCopyright{
+		border: 1px black solid;
+	}
 /* =================== register ===================== */
 /* ================================================== */
 .regBack{

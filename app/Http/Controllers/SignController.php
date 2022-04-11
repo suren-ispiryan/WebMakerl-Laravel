@@ -51,7 +51,7 @@ class SignController extends Controller
                 return view('managerDashboard')->with('taskList', $tasklist);    
             }
             else if(Auth::User()->usertype == "programmer"){
-                $tasklist = Task::where('assignedTo', Auth::User()->email)->get();
+                $tasklist = Task::where('assignedTo', Auth::User()->email)->where('status', "assigned")->get();
                 return view('programmerDashboard')->with('taskList', $tasklist);    
             }
         }   
